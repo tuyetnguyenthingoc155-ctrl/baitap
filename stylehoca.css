@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ocean {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Cảnh biển di chuyển ngang */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100vh;
+  background: url('images/cartoon-underwater-landscape-background-vector.jpg') repeat-x left top;
+  background-size: auto 100%;
+  animation: moveSea 10s linear infinite;
+}
+
+@keyframes moveSea {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Thợ lặn lặn lên xuống */
+.diver {
+  position: absolute;
+  width: 1200px;
+  height: 900px;
+  background: url('images/diver1.png') no-repeat center/contain;
+  animation: diveUpDown 4s ease-in-out infinite alternate;
+}
+
+.diver1 { left: 100px; animation-delay: 0s; }
+
+@keyframes diveUpDown {
+  0% { top: 100px; }
+  100% { top: 400px; }
+}
+
+/* Cá mập di chuyển ngang và quay lại */
+.jellyfish {
+  position: absolute;
+  width: 1000px;
+  height: 800px;
+  background: url('images/under the sea fun Sticker by Dublin Zoo - Find & Share on GIPHY.gif') no-repeat center/contain;
+  top: 1200px;
+  animation: swimJellyfish 10s linear infinite;
+}
+
+@keyframes swimJellyfish {
+  0% { left: -100px; transform: scaleX(1); }
+  50% { left: calc(100vw - 100px); transform: scaleX(1); }
+  51% { transform: scaleX(-1); }
+  100% { left: -100px; transform: scaleX(-1); }
+}
+
+/* Rùa di chuyển chậm hơn */
+.turtle {
+  position: absolute;
+  width: 900px;
+  height: 800px;
+  background: url('images/download.gif') no-repeat center/contain;
+  top: 2000px;
+  animation: swimTurtle 20s linear infinite;
+}
+
+@keyframes swimTurtle {
+  0% { left: -80px; transform: scaleX(1); }
+  50% { left: calc(100vw - 80px); transform: scaleX(1); }
+  51% { transform: scaleX(-1); }
+  100% { left: -80px; transform: scaleX(-1); }
+}
