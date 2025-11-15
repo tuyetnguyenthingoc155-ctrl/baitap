@@ -36,8 +36,8 @@ html, body {
 /* Thợ lặn lặn lên xuống */
 .diver {
   position: absolute;
-  width: 1200px;
-  height: 900px;
+  width: 300px;
+  height: 180px;
   background: url('images/diver1.png') no-repeat center/contain;
   animation: diveUpDown 4s ease-in-out infinite alternate;
 }
@@ -52,10 +52,10 @@ html, body {
 /* Cá mập di chuyển ngang và quay lại */
 .jellyfish {
   position: absolute;
-  width: 1000px;
-  height: 800px;
+  width: 200px;
+  height: 160px;
   background: url('images/under the sea fun Sticker by Dublin Zoo - Find & Share on GIPHY.gif') no-repeat center/contain;
-  top: 1200px;
+  top: 120px;
   animation: swimJellyfish 10s linear infinite;
 }
 
@@ -69,10 +69,10 @@ html, body {
 /* Rùa di chuyển chậm hơn */
 .turtle {
   position: absolute;
-  width: 900px;
-  height: 800px;
+  width: 300px;
+  height: 200px;
   background: url('images/download.gif') no-repeat center/contain;
-  top: 2000px;
+  top: 600px;
   animation: swimTurtle 20s linear infinite;
 }
 
